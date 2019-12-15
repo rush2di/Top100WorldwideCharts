@@ -1,0 +1,32 @@
+.container {
+  height: 100px;
+  min-width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: 1px solid gray;
+}
+
+.subContainer {
+  width: 60vw;
+  margin: auto;
+  position: relative;
+}
+
+.flexyFix {
+  display: flex;
+  height: -webkit-fill-available;
+}
+
+.infoBox {
+  width: 20vw;
+}
+
+@media (max-width: 900px) {
+  .container {
+    z-index: 10;
+  }
+  .subContainer {
+    margin: auto 0;
+  }
+}

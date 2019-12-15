@@ -1,0 +1,54 @@
+.circlBtnLg {
+  width: 50px;
+  height: 50px;
+  background-color: #ffff;
+  background-size: contain;
+  background-position-x: 2px;
+  box-shadow: 0 0 12px #35353585;
+  border: none;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  outline: none;
+  z-index: 5;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.circlBtnLg:active {
+  transform: scale(0.8);
+}
+
+.circlBtnSm {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-size: 35px;
+  background-position-y: center;
+  background-position-x: center;
+  box-shadow: 0 0 12px #35353585;
+  background-color: #ffff;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  z-index: 5;
+  transition: 0.2s ease-out;
+}
+
+.circlBtnSm:active {
+  transform: scale(0.9);
+}
+
+.container {
+  position: absolute;
+  width: -webkit-fill-available;
+  display: flex;
+  margin-top: 0.5em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .circlBtnLg {
+    height: 40px;
+    width: 40px;
+  }
+}

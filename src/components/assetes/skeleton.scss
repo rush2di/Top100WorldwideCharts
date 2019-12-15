@@ -1,0 +1,41 @@
+$first: #949494;
+$second: #c0c0c0;
+$third: #d9d9d9;
+$forth: #c0c0c0;
+$fifith: #949494;
+
+.m5 {
+  margin: 1.3em 0;
+}
+.mcenter {
+  margin: 0 auto;
+}
+
+.bg {
+  border-radius: 5px;
+  height: 0.8em;
+  background-image: linear-gradient(
+    to right,
+    $third,
+    $second,
+    $third,
+    $forth,
+    $fifith
+  );
+  background-size: 300%;
+  background-position: 0 0;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
+}
+@keyframes gradients {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+  margin: 1em auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  color: #4d4d4d;
+}
+
+.tableWrapper {
+  padding: 0 3em;
+  margin: 0 -3em;
+  max-height: calc(100vh - 20vh);
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.tableWrapper::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0.534);
+  outline: 1px solid darkgrey;
+  border-radius: 15px;
+}

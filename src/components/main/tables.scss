@@ -1,0 +1,198 @@
+$table-border-color: #b8b8b8;
+$container-width: 88%;
+$container-max-width: 40em;
+
+$table-border-width: 0.071428571em;
+$table-border-style: solid;
+$table-margin-bottom: 1.529411765em;
+$table-cell-padding: 0.470588235em;
+$table-cell-text-align: left;
+$table-cell-border-top: $table-border-width $table-border-style
+  $table-border-color;
+$table-header-font-weight: bold;
+$table-body-border-top: 0.142857143em $table-border-style $table-border-color;
+$table-condensed-padding: 0.294117647em;
+$table-bordered-border: $table-border-width $table-border-style
+  $table-border-color;
+$table-bordered-border-radius: 0.470588235em;
+$table-border-left: $table-border-width $table-border-style $table-border-color;
+$table-bordered-child-radius: 0.470588235em;
+
+// @-webkit-viewport {
+//   width: device-width;
+//   zoom: 1;
+// }
+// @-moz-viewport {
+//   width: device-width;
+//   zoom: 1;
+// }
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+}
+@-o-viewport {
+  width: device-width;
+  zoom: 1;
+}
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+html {
+  overflow-y: auto;
+}
+a {
+  color: #0f76ce;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+a:hover {
+  color: skyblue;
+}
+
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.container {
+  max-width: $container-max-width;
+  width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+tbody {
+  color: #393939;
+  th {
+    cursor: default;
+  }
+  td {
+    cursor: pointer;
+  }
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table,
+%table {
+  width: 100%;
+  margin-bottom: $table-margin-bottom;
+  tr {
+    height: 3em;
+  }
+}
+.table th,
+%table th,
+.table td,
+%table td {
+  padding: $table-cell-padding;
+  text-align: $table-cell-text-align;
+  border-top: $table-cell-border-top;
+}
+
+.table th,
+%table th {
+  font-weight: $table-header-font-weight;
+  vertical-align: middle;
+}
+
+.table td,
+%table td {
+  vertical-align: middle;
+}
+
+.table thead:first-child tr th,
+%table thead:first-child tr th,
+.table thead:first-child tr td,
+%table thead:first-child tr td {
+  border-top: 0;
+}
+.table tbody + tbody,
+%table tbody + tbody {
+  border-top: $table-body-border-top;
+}
+.table-condensed th,
+%table-condensed th,
+.table-condensed td,
+%table-condensed td {
+  padding: $table-condensed-padding;
+}
+
+.table-bordered,
+%table-bordered {
+  border: $table-bordered-border;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-radius: $table-bordered-border-radius;
+}
+
+.table-bordered th + th,
+%table-bordered th + th,
+.table-bordered td + td,
+%table-bordered td + td,
+.table-bordered th + td,
+%table-bordered th + td,
+.table-bordered td + th,
+%table-bordered td + th {
+  border-left: $table-border-left;
+}
+
+.table-bordered thead:first-child tr:first-child th,
+%table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+%table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td,
+%table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table-bordered thead:first-child tr:first-child th:first-child,
+%table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child,
+%table-bordered tbody:first-child tr:first-child td:first-child {
+  border-radius: $table-bordered-child-radius 0 0 0;
+}
+
+.table-bordered thead:first-child tr:first-child th:last-child,
+%table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child,
+%table-bordered tbody:first-child tr:first-child td:last-child {
+  border-radius: 0 $table-bordered-child-radius 0 0;
+}
+
+.table-bordered thead:last-child tr:last-child th:first-child,
+%table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child,
+%table-bordered tbody:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 $table-bordered-child-radius;
+}
+
+.table-bordered thead:last-child tr:last-child th:last-child,
+%table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child,
+%table-bordered tbody:last-child tr:last-child td:last-child {
+  border-radius: 0 0 $table-bordered-child-radius 0;
+}
+
+@media (max-width: 900px) {
+  .mobile-table {
+    margin-bottom: 6.5em;
+  }
+}
+@media (max-width: 550px) {
+  .mobile-table {
+    font-size: large;
+  }
+}
+@media (max-width: 400px) {
+  .mobile-table {
+    font-size: smaller;
+  }
+}
