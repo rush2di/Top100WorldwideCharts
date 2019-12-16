@@ -65,12 +65,3 @@ export const userSavedTrack = (uid, newfavs) => {
       });
   };
 };
-
-// ghadi nzid les track jdad li deja aykouno tjm3o f var f func
-// anzid action creator dyal fach atm7a chi val mn array saved
-//        |               |             |             |
-//        v               v             v             v
-// ndir action creator w7da nsmiha userupdate hit la logic andirha
-// f func f player.js +bonus a chaque fois tiduz dispatch props
-// mta3 infoBox.js trigger rerender b useeffect, resultats btali
-// howa automatic icn toggle
