@@ -48,10 +48,10 @@ const Signup = props => {
   );
 };
 
-const mapDispatchToPrps = dispatch => {
+const mapDispatchToProps = dispatch => {
   return {
     signup: (u, e, p) => dispatch(userSignup(u, e, p))
   };
 };
 
-export default connect(mapDispatchToPrps)(Signup);
+export default connect(null,mapDispatchToProps)(Signup);
