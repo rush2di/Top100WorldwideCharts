@@ -14,6 +14,7 @@ const Box = posed.div({
 
 const UserFavs = props => {
   const { likedTracks, username } = props.statut;
+  const style = { textAlign: "center", margin: "2em" };
   const table = likedTracks.map((track, index) => {
     return (
       <tr key={track.id}>
@@ -37,7 +38,7 @@ const UserFavs = props => {
         </Container>
       </div>
     ) : (
-      <div>Opps ! You have no saved tracks yet</div>
+      <div style={style}>Opps ! You have no saved tracks yet</div>
     ))
   );
 };
