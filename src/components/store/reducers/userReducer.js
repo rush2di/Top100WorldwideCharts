@@ -43,7 +43,7 @@ const userReducer = (state = initState, action) => {
       };
     case "USER_UPDATE_START":
       return { ...state, likedTracks: action.newfavs };
-    case "USER_UPDATE_START":
+    case "USER_UPDATE_SUCCESS":
       return { ...state };
     case "USER_UPDATE_ERROR":
       return { ...state, errorMessage: action.err };
