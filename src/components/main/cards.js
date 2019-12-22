@@ -42,7 +42,7 @@ const Cards = props => {
     <div className={cardStyles.wrapper}>
       <Container>
         <Header>
-          <h1 className={cardStyles.title}>Explore top 100 charts Worldwide</h1>
+          <h1 className={cardStyles.title}>Explore top 100 worldwide charts</h1>
         </Header>
         <Header>
           <p>
