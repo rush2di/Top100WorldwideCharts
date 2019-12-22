@@ -28,9 +28,9 @@ const InfoBox = props => {
             return userUpdate(userId, newfavs);
           }
         }
-        newfavs.push({ id, artist, title });
-        return userUpdate(userId, newfavs);
       }
+       newfavs.push({ id, artist, title });
+       return userUpdate(userId, newfavs);
     }
     return alert("sign up or login to be able to save");
   };
