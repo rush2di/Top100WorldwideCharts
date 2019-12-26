@@ -4,7 +4,7 @@
 
 
 > ### Top100WorldwideCharts
-  Explore top 100 tracks in diffrent countries around the glob \
+  Explore top 100 tracks in diffrent countries around the glob 
 #### Stack: 
 + ReactJs
 + Firebase
