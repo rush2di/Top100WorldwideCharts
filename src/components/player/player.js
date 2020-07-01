@@ -20,13 +20,13 @@ class Player extends Component {
       fillParent: true,
       maxCanvasWidth: 30,
       autoCenter: true,
-      progressColor: "#878787a3",
+      progressColor: "#585858a3",
       responsive: true,
-      waveColor: "#2727277a",
+      waveColor: "#21212196",
       mediaType: "audio",
       normalize: false,
       cursorColor: "#4a74a5",
-      mediaControls: true
+      mediaControls: true,
     });
   }
   componentDidUpdate() {
@@ -91,15 +91,15 @@ class Player extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return { playlist: state.playlist, player: state.player };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     next: () => dispatch({ type: "NEXT_SONG", listLength: 100 }),
     previous: () => dispatch({ type: "PREVIOUS_SONG", listLength: 100 }),
-    userUpdate: (newfav, uid) => dispatch(userSavedTrack(newfav, uid))
+    userUpdate: (newfav, uid) => dispatch(userSavedTrack(newfav, uid)),
   };
 };
 

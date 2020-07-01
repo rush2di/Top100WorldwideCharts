@@ -83,7 +83,8 @@ table {
 .table,
 %table {
   width: 100%;
-  margin-bottom: $table-margin-bottom;
+  // margin-bottom: $table-margin-bottom;
+  font-size: 12.5px;
   tr {
     height: 3em;
   }
@@ -183,14 +184,14 @@ table {
 
 @media (max-width: 900px) {
   .mobile-table {
-    margin-bottom: 6.5em;
+    margin-bottom: 1.5em;
   }
 }
-@media (max-width: 550px) {
-  .mobile-table {
-    font-size: large;
-  }
-}
+// @media (max-width: 550px) {
+//   .mobile-table {
+//     font-size: large;
+//   }
+// }
 @media (max-width: 400px) {
   .mobile-table {
     font-size: smaller;

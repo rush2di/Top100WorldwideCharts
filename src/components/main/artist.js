@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { fetchArtist } from "../store/actions/artistAction";
 import ArtistData from "./artistData";
 
-const Artist = props => {
+const Artist = (props) => {
   useEffect(() => {
     const { params } = props.match;
     const { id } = props.artistInfo.payload;
@@ -18,13 +18,13 @@ const Artist = props => {
   ) : null;
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return { artistInfo: state.artist };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    artist: id => dispatch(fetchArtist(id))
+    artist: (id) => dispatch(fetchArtist(id)),
   };
 };
 

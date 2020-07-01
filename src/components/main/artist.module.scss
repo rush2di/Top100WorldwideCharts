@@ -1,19 +1,22 @@
 .container {
   padding: 0 3em;
   margin: 0 -3em;
-  max-height: calc(100vh - 20vh);
-  overflow: hidden;
-  scroll-behavior: smooth;
   display: flex;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .artistInfo {
   flex-direction: column;
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
   display: flex;
-  width: 40rem;
-  margin: 0 1em 0 0;
+  height: fit-content;
+  margin: 0rem 1em 0 0;
   align-items: center;
+  padding: 5rem 0 0;
   img {
     border-radius: 50%;
     max-width: 190px;
@@ -24,33 +27,6 @@
   max-height: inherit;
   margin: 0 1vw;
   padding: 0 1vw;
-  table {
-    margin-bottom: 3em;
-  }
-}
-.tableContainer::-webkit-scrollbar {
-  width: 0.4em;
-}
-
-.tableContainer::-webkit-scrollbar-thumb {
-  background-color: #80808017;
-  outline: 1px solid darkgrey;
-  border-radius: 15px;
-}
-.tableContainer::-webkit-scrollbar-thumb:active {
-  background-color: #8080805b;
-}
-.container::-webkit-scrollbar {
-  width: 0.4em;
-}
-
-.container::-webkit-scrollbar-thumb {
-  background-color: #80808038;
-  outline: 1px solid darkgrey;
-  border-radius: 15px;
-}
-.container::-webkit-scrollbar-thumb:active {
-  background-color: #8080805b;
 }
 @media (max-width: 900px) {
   .container {
@@ -61,6 +37,7 @@
   }
   .artistInfo {
     margin: 1em;
+    padding: 0;
   }
 }
 

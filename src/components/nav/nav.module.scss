@@ -5,12 +5,12 @@
   flex-direction: column;
   min-width: 220px;
   max-width: 220px;
-  height: 80vh;
-  border-radius: 15px;
+  height: 74vh;
+  border-radius: 5px;
   align-items: center;
   .logo {
     width: 65px;
-    margin: 1.5em 0;
+    margin: 1.5em 0 1rem;
   }
   .menu {
     display: none;
@@ -35,7 +35,7 @@
     padding: 1em 0;
     text-align: center;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
     color: #666666;
     transition: 0.4s ease;
   }
